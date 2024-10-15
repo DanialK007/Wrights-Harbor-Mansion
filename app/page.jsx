@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { FaArrowRight } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 export default function Home() {
   const sectionRef = useRef(null);
@@ -60,13 +61,7 @@ export default function Home() {
 
     // Zoom effect for the hero image
     animateElement(heroImgRef, { scale: 1.8 }, { scale: 1 }, 0, 3000);
-    animateElement(
-      heroImg2Ref,
-      { scale: 1.8 },
-      { scale: 1 },
-      6000,
-      9000
-    );
+    animateElement(heroImg2Ref, { scale: 1.8 }, { scale: 1 }, 6000, 9000);
 
     // Move room1 image horizontally
     animateElement(img1Ref, { x: 200 }, { x: 0 }, 500, 4000);
@@ -183,9 +178,12 @@ export default function Home() {
 
           {/* Hero Section */}
           <div className="h-screen w-[1300px] flex justify-center items-center overflow-hidden">
-            <img
+            <Image
+              width={1000}
+              height={1000}
+              objectFit="cover"
               ref={heroImgRef}
-              src="img/hero.png"
+              src="/img/hero.png"
               alt=""
               className="w-full h-full object-cover scale-[1.8]"
             />
@@ -194,39 +192,69 @@ export default function Home() {
           {/* Images */}
           <div className="h-screen w-[700px] flex justify-center items-center relative bg-[#dcf263]">
             {/* img1 */}
-            <img
+            <Image
+              width={1000}
+              height={1000}
+              objectFit="cover"
               ref={img1Ref}
-              src="img/img1.png"
+              src="/img/img1.png"
               alt=""
               className="z-20 h-[500px]"
             />
 
             <div className="absolute top-1/2 -translate-y-1/2 h-[560px] z-10 -right-20">
               <div className="h-1/2 w-full bg-[#aa4935]"></div>
-              <img src="img/img2.png" alt="" className="h-1/2" />
+              <Image
+                width={500}
+                height={500}
+                objectFit="cover"
+                src="/img/img2.png"
+                alt=""
+                className="h-1/2"
+              />
             </div>
 
             {/* letter */}
             <div ref={letterRef} className="absolute -top-12 z-10 -right-40">
-              <img src="img/letter.png" alt="" className="h-40" />
+              <Image
+                width={500}
+                height={500}
+                objectFit="cover"
+                src="/img/letter.png"
+                alt=""
+                className="h-40"
+              />
             </div>
           </div>
 
           <div className="h-screen w-[1600px] bg-[#eeece8a1] text-[#333] flex flex-col justify-center items-center relative">
-            <img
+            <Image
+              width={1000}
+              height={1000}
+              objectFit="cover"
               ref={img3Ref}
-              src="img/img3.png"
+              src="/img/img3.png"
               alt=""
-              className="absolute z-10 top-1/2 -translate-y-1/2 left-64 h-[240px]"
+              className="absolute z-10 top-1/2 -translate-y-1/2 left-64 h-[200px] w-[260px] object-cover"
             />
-            <img
+            <Image
+              width={1000}
+              height={1000}
+              objectFit="cover"
               ref={img4Ref}
-              src="img/img4.png"
+              src="/img/img4.png"
               alt=""
-              className="absolute z-20 top-1/2 -translate-y-1/2 -right-28 h-[480px]"
+              className="absolute z-20 top-1/2 -translate-y-1/2 -right-28 h-[480px] w-[600px] object-cover"
             />
             <div ref={letter2Ref} className="absolute -bottom-8 z-10 right-32">
-              <img src="img/letter2.png" alt="" className="h-56" />
+              <Image
+                width={500}
+                height={500}
+                objectFit="cover"
+                src="/img/letter2.png"
+                alt=""
+                className="h-56"
+              />
             </div>
 
             <div className="text-[#52870b] text-xs font-bold pb-5 uppercase">
@@ -240,12 +268,13 @@ export default function Home() {
             </div>
             <div className="max-w-lg">
               <div className="py-5 text-black/50 text-[1.1rem]">
-                Wright&apos;s Harbor Mansion has been restored by the Louise Steinman
-                von Hess Foundation with great care to accurately represent the
-                period of 1700-1750, when its builder, Susanna Wright — known as
-                “the blue stocking of the Susquehanna”, engaged in intellectual
-                discourse with some of the most inventive and influential minds
-                of 18th century Philadelphia and beyond.
+                Wright&apos;s Harbor Mansion has been restored by the Louise
+                Steinman von Hess Foundation with great care to accurately
+                represent the period of 1700-1750, when its builder, Susanna
+                Wright — known as “the blue stocking of the Susquehanna”,
+                engaged in intellectual discourse with some of the most
+                inventive and influential minds of 18th century Philadelphia and
+                beyond.
               </div>
               {/* Learn More Button */}
               <button className="flex gap-5 group uppercase text-sm font-semibold items-center hover:tracking-widest duration-300">
@@ -261,7 +290,14 @@ export default function Home() {
           </div>
 
           <div className="">
-            <img src="img/green.png" alt="" className="h-full" />
+            <Image
+              width={300}
+              height={1000}
+              objectFit="cover"
+              src="/img/green.png"
+              alt=""
+              className="h-full"
+            />
           </div>
 
           <div className="h-screen w-[1600px] bg-[#eeece8a1] text-[#333] grid grid-cols-11">
@@ -440,24 +476,33 @@ export default function Home() {
           </div>
 
           <div className="h-screen w-[1400px] relative bg-[#6a1606] grid grid-cols-2">
-            <img
+            <Image
+              width={1000}
+              height={1000}
+              objectFit="cover"
               ref={img6Ref}
-              src="img/img6.png"
+              src="/img/img6.png"
               alt=""
               className="absolute z-20 bottom-32 -left-40 h-[480px] w-[700px] object-cover"
             />
 
             <div className="">
-              <img
-                src="img/img5.png"
+              <Image
+                width={500}
+                height={500}
+                objectFit="cover"
+                src="/img/img5.png"
                 alt=""
                 className="h-1/2 w-full object-cover"
               />
             </div>
             <div className="overflow-hidden">
-              <img
+              <Image
+                width={500}
+                height={500}
+                objectFit="cover"
                 ref={heroImg2Ref}
-                src="img/hero2.png"
+                src="/img/hero2.png"
                 alt=""
                 className="w-full h-full object-cover scale-[1.7]"
               />
@@ -465,25 +510,34 @@ export default function Home() {
           </div>
 
           <div className="h-screen w-[1280px] bg-[#eeece8a1] text-[#333] ps-48 flex flex-col justify-center items-center relative">
-            <img
+            <Image
+              width={380}
+              height={250}
+              objectFit="cover"
               ref={img7Ref}
-              src="img/img7.png"
+              src="/img/img7.png"
               alt=""
-              className="z-20 h-[250px] absolute left-10 top-32"
+              className="z-20 object-cover absolute left-10 top-32"
             />
 
-            <img
+            <Image
+              width={180}
+              height={210}
+              objectFit="cover"
               ref={img8Ref}
-              src="img/img8.png"
+              src="/img/img8.png"
               alt=""
-              className="z-10 h-[210px] absolute left-20 bottom-32"
+              className="z-10 object-cover absolute left-20 top-[400px]"
             />
 
-            <img
+            <Image
+              width={240}
+              height={140}
+              objectFit="cover"
               ref={img9Ref}
-              src="img/img9.png"
+              src="/img/img9.png"
               alt=""
-              className="z-20 h-[160px] absolute -right-40 bottom-20"
+              className="z-20 absolute -right-40 bottom-20"
             />
 
             <div className="text-[0.8rem] font-bold pb-5 uppercase text-[#ff6320] tracking-wider">
@@ -501,11 +555,11 @@ export default function Home() {
                 interactive virtual tour experience. Guided by the late Joseph
                 Keller Kindig, III, an internationally recognized authority on
                 American decorative arts and design, as well as both an advisor
-                to the von Hesses regarding the furnishing of Wright&apos;s Harbor
-                Mansion and a one-time board member of the Louise Steinman von
-                Hess Foundation. Our virtual tours of individual rooms provide
-                comprehensive and immersive looks at the daily life of
-                18th-century Susanna Wright.
+                to the von Hesses regarding the furnishing of Wright&apos;s
+                Harbor Mansion and a one-time board member of the Louise
+                Steinman von Hess Foundation. Our virtual tours of individual
+                rooms provide comprehensive and immersive looks at the daily
+                life of 18th-century Susanna Wright.
               </div>
               {/* Learn More Button */}
               <button className="flex gap-5 group uppercase text-sm font-semibold items-center hover:tracking-widest duration-300">
@@ -522,7 +576,7 @@ export default function Home() {
 
           <div className="h-screen w-[1480px]">
             <video
-              src="img/video.mp4"
+              src="/img/video.mp4"
               autoPlay
               muted
               loop
@@ -559,8 +613,11 @@ export default function Home() {
                     </button>
                   </div>
                 </div>
-                <img
-                  src="img/img10.png"
+                <Image
+                  width={500}
+                  height={500}
+                  objectFit="cover"
+                  src="/img/img10.png"
                   alt=""
                   className="w-full h-full object-cover"
                 />
@@ -595,7 +652,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-11 text-neutral-500 text-[0.95rem]">
+              <div className="grid grid-cols-11 text-neutral-500 text-[0.95rem] pt-5">
                 <div className="col-span-4 grid grid-cols-2 items-end">
                   <div className="flex flex-col gap-1">
                     <a href="" className="hover:text-[#aa4935]">
@@ -630,7 +687,14 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-span-7 flex flex-col items-end gap-8 px-5">
-                  <img src="img/slvhf.svg" alt="" className="h-24" />
+                  <Image
+                    width={50}
+                    height={50}
+                    objectFit="cover"
+                    src="/img/slvhf.svg"
+                    alt=""
+                    className="h-20"
+                  />
                   <div className="">
                     Copyright 2024 Louise Steinman von Hess Foundation. All
                     rights reserved. Website by{" "}

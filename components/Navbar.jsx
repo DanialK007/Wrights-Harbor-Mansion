@@ -96,7 +96,7 @@ function Navbar() {
         ></button>
         <div
           className={`p-20 flex flex-col max-w-[50rem] font-lora ms-auto w-full justify-center h-screen text-white bg-[#6a7870] duration-500 ease-out ${
-            showMenu ? "translate-x-0" : "translate-x-full"
+            showMenu ? "" : "translate-x-full"
           }`}
         >
           <a
