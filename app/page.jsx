@@ -603,7 +603,7 @@ export default function Home() {
                   <div className="pt-5">
                     {/* Learn More Button */}
                     <button className="flex gap-5 group uppercase text-sm font-semibold items-center hover:tracking-widest duration-300">
-                      Here's how
+                      Here&apos;s how
                       <div className="size-10 rounded-full border-2 border-white flex items-center justify-center relative">
                         <div className="absolute top-0 left-0 group-hover:text-black w-full h-full flex items-center justify-center">
                           <FaArrowRight />
