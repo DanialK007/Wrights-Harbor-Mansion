@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
         />
         <meta name="author" content="Your Name" /> */}
         <link rel="icon" href="img/favicon.ico" />
-        <title>Wright's Harbor Mansion</title>
+        <title>Wright&apos;s Harbor Mansion</title>
         {/* Add any other meta tags or links here */}
       </head>
       <body className={`${inter.className} bg-white text-black`}>

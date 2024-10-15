@@ -161,7 +161,7 @@ export default function Home() {
 
               {/* Description */}
               <div className="max-w-xl py-8 text-white/50 text-lg">
-                A historic house museum, the 1738 Wright’s Harbor Mansion
+                A historic house museum, the 1738 Wright&apos;s Harbor Mansion
                 celebrates important examples of pre-1750 fine art, decorative
                 arts, and architecture, as well as a multi-generational
                 narrative reflective of Columbia, Pennsylvania, and its
@@ -240,7 +240,7 @@ export default function Home() {
             </div>
             <div className="max-w-lg">
               <div className="py-5 text-black/50 text-[1.1rem]">
-                Wright’s Harbor Mansion has been restored by the Louise Steinman
+                Wright&apos;s Harbor Mansion has been restored by the Louise Steinman
                 von Hess Foundation with great care to accurately represent the
                 period of 1700-1750, when its builder, Susanna Wright — known as
                 “the blue stocking of the Susquehanna”, engaged in intellectual
@@ -419,7 +419,7 @@ export default function Home() {
             </div>
             <div className="max-w-md">
               <div className="py-5 text-white/50 text-[1.1rem]">
-                Largely unaltered from its original construction, Wright’s
+                Largely unaltered from its original construction, Wright&apos;s
                 Harbor Mansion was acquired in 1973 by Richard C. and Louise
                 Steinman von Hess, both of whom demonstrated life-long
                 commitments to historic preservation and art connoisseurship.
@@ -497,11 +497,11 @@ export default function Home() {
             </div>
             <div className="max-w-lg">
               <div className="py-5 text-black/50 text-[1.1rem]">
-                Explore Wright’s Harbor Mansion while online with our
+                Explore Wright&apos;s Harbor Mansion while online with our
                 interactive virtual tour experience. Guided by the late Joseph
                 Keller Kindig, III, an internationally recognized authority on
                 American decorative arts and design, as well as both an advisor
-                to the von Hesses regarding the furnishing of Wright’s Harbor
+                to the von Hesses regarding the furnishing of Wright&apos;s Harbor
                 Mansion and a one-time board member of the Louise Steinman von
                 Hess Foundation. Our virtual tours of individual rooms provide
                 comprehensive and immersive looks at the daily life of
@@ -541,7 +541,7 @@ export default function Home() {
                     Want to visit
                   </div>
                   <div className="text-5xl font-lora leading-[1] uppercase flex">
-                    WRIGHT’S HARBOUR
+                    Wright&apos;s HARBOUR
                   </div>
                   <div className="text-5xl font-lora leading-[1] uppercase">
                     mansion?

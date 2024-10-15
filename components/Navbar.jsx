@@ -48,7 +48,7 @@ function Navbar() {
           href="#"
           className="uppercase w-72 block text-[0.8rem] pt-2 font-semibold tracking-widest"
         >
-          Wright's Harbor Mansion
+          Wright&apos;s Harbor Mansion
         </a>
         <a href="#" className="me-5">
           <svg
